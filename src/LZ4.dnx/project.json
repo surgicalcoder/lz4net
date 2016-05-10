@@ -1,0 +1,29 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "LZ4.core Class Library",
+    "authors": [ "bdeustua" ],
+    "buildOptions": {
+        "allowUnsafe": true
+    },
+    "compilationOptions": {
+        "allowUnsafe": true
+    },
+
+    "frameworks": {
+        "dotnet5.4": {
+            "dependencies": {
+                "Microsoft.CSharp": "4.0.1-beta-23516",
+                "System.IO": "4.0.11-beta-23516",
+                "System.IO.Compression": "4.1.0-beta-23516"
+            }
+        },
+        "dnxcore50": {
+            "dependencies": {
+                "Microsoft.CSharp": "4.0.1-beta-23516",
+                "System.IO": "4.0.11-beta-23516",
+                "System.IO.Compression": "4.1.0-beta-23516"
+            }
+        },
+        "net451": { }
+    }
+}
