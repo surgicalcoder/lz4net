@@ -44,7 +44,7 @@ namespace LZ4ps
 		private static void Assert(bool condition, string errorMessage)
 		{
 			if (!condition) throw new ArgumentException(errorMessage);
-			Debug.Assert(condition, errorMessage);
+			
 		}
 
 		// ReSharper restore UnusedParameter.Local

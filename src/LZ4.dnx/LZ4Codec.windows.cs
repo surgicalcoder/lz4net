@@ -26,7 +26,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #endregion
 
 using LZ4.Services;
-using Microsoft.Win32;
 using System;
 using System.Runtime.CompilerServices;
 
