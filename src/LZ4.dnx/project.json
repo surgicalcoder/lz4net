@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0-*",
+    "description": "LZ4.Core Class Library",
+    "buildOptions": {
+        "allowUnsafe": true
+    },
+    "compilationOptions": {
+        "allowUnsafe": true
+    },
+    "frameworks": {
+        "netcoreapp1.0": {
+            "imports": "dnxcore50"
+        },
+        "net461": {}
+    },
+    "dependencies": {
+        "System.IO": "4.3.0",
+        "System.IO.Compression": "4.3.0",
+        "System.Runtime": "4.3.0",
+        "System.Runtime.Extensions": "4.3.0"
+    },
+    "scripts": {
+        "postcompile": [
+            "dotnet pack --no-build --configuration %compile:Configuration%"
+        ]
+    },
+    "packOptions": {
+        "summary": "A port of the library to .NET core, with some changes",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/surgicalcoder/lz4net"
+        },
+        "owners": [ "surgicalcoder" ]
+    }
+}
