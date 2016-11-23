@@ -1,5 +1,7 @@
-# lz4net
+# lz4net.dnx
 **LZ4** - ultra fast compression algorithm - for all .NET platforms
+
+This code has been adapted from BDeus's Core port, to work with the latest version of .NET Core.
 
 LZ4 is lossless compression algorithm, sacrificing compression ratio for compression/decompression speed. Its compression speed is ~400 MB/s per core while decompression speed reaches ~2 GB/s, not far from RAM speed limits.
 
@@ -7,17 +9,8 @@ LZ4net brings LZ4 to all (most?) .NET platforms: .NET 2.0+, Mono, Windows Phone,
 
 Original LZ4 has been written by Yann Collet and original C sources can be found [here](https://github.com/Cyan4973/lz4)
 
-## Migration from codeplex
-Sources has been moved to GitHub, while project documentation has not been properly migrated yet and is still hosted at [codeplex](https://lz4net.codeplex.com/)
-
-## Change log
-You can find it [here](CHANGES.md)
-
 ## NuGet
-You can download lz4net from [NuGet](http://nuget.org/packages/lz4net/)
-
-## Releases
-Releases are also available on [github](https://github.com/MiloszKrajewski/lz4net/releases)
+You can download lz4net from [NuGet](https://www.nuget.org/packages/LZ4.dnx/)
 
 ## What is 'Fast compression algorithm'?
 While compression algorithms you use day-to-day to archive your data work around the speed of 10MB/s giving you quite decent compression ratios, 'fast algorithms' are designed to work 'faster than your hard drive' sacrificing compression ratio.
@@ -80,9 +73,4 @@ Plus class which chooses the best available implementation for the job: [One cla
 
 ## Platform availability
 
-| Platform | Implementations | Notes |
-| --- | --- | --- |
-| NET 2.0 | Safe | could be Unsafe as well, but I didn't bother |
-| NET 4.0 | MixedMode, C++/CLI, Unsafe, Safe | does work on Mono as well |
-| Portable | Unsafe, Safe | Windows Phone, Xamarin.*, Windows Store |
-| Silverlight | Safe | anyone? |
+.Net Core
